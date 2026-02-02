@@ -1,0 +1,16 @@
+1. Release Note: NirSoft Offloader (v1.0.0)
+This release introduces the automated "Surgical Mirror" for NirSoft utilities, designed specifically for clean, structured backups over unstable connections.
+Key Features:
+Automated Structuring: Automatically sorts tools into zips, exes, and x64zips folders to stay under GitHub's 1,000-file per-directory limit.
+Dynamic Scraping: Pulls official tool descriptions from NirLauncher to populate generated HTML directories.
+English-Only Filter: Strictly excludes translation files (blocking _lng and named language patterns like _german) to reduce repository bloat.
+Slow-Link Protection: Implements 10-file batching and extended timeouts (http.lowSpeedTime) to prevent HTTP 408 errors on slow connections.
+Fixes:
+Resolves "Dubious Ownership" errors for USB/external drive backups via automated safe.directory whitelisting.
+Eliminates PowerShell ISE URL truncation bugs using Start-Process and literal string concatenation.
+1. Release Note: NirSoft Offloader (v5.5)
+Evolution: Progressed from a simple site-sniff to a surgical multi-threaded archiver.
+Version History Highlights:
+v1-v3: Transitioned from wget to wget2 for multi-threading; solved 408/RPC connection errors.
+v4: Implemented the "Triple-Threat" folder structure (zips, exes, x64zips) and 3-column HTML grid.
+v5.0-v5.5: Perfected the English-only whitelist (blocking _lng and full language names), integrated NirLauncher web scraping for utility descriptions, and added the "Clean Start" local folder wipe.

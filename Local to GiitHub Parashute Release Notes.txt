@@ -1,0 +1,17 @@
+2. Release Note: Local-to-GitHub Parachute (v1.0.0)
+The initial release of the robust local folder mirroring tool, optimized for slow-speed reliability and security.
+Key Features:
+Safety Scanner: Performs a pre-flight "Dry Run" scan to identify and block files over 100MB (GitHub's hard limit) before uploading.
+Security Filtering: Automatically excludes sensitive .env, .log, and .tmp files, plus hidden system files like desktop.ini.
+Identity Automation: Automatically generates a GitHub-compliant "noreply" email from your username to protect your private email.
+Ultra-Small Batching: Uses 5-file chunks specifically tuned for very slow "high-speed" connections to maximize stability.
+UX Enhancements:
+Includes an "On-Top" completion popup that persists until acknowledged.
+Auto-generates a standard README.md for the target repository if one is missing.
+
+2. Release Note: Local-to-GitHub Parachute (v3.1)
+Evolution: Developed specifically for USB-to-Cloud transfers over high-latency connections.
+Version History Highlights:
+v1: Introduced the Folder Browser UI and 100MB Pre-Flight safety scanner.
+v2: Solved the "Dubious Ownership" USB bug and the src refspec main error.
+v3.0-v3.1: Fixed the critical PowerShell ISE URL truncation bug using Start-Process and literal concatenation; stabilized the completion popup for sequential execution.
